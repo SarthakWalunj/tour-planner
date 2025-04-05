@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandragiri - Explore Odisha</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #fefefe;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('chandragiri.jpg') center/cover no-repeat;
+      padding: 100px 250px;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(1px);
+      z-index: 1;
+    }
+
+    header h1,
+    header p {
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #5c6f68;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+      background-color: #f6f4f1;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .highlight-box {
+      background: #d7f0f4;
+      border-left: 5px solid #80cbc4;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #f0f0f0;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .newsletter {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .newsletter input[type="email"] {
+      padding: 10px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-right: 10px;
+    }
+
+    .newsletter button {
+      padding: 10px 20px;
+      background-color: #80cbc4;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .newsletter button:hover {
+      background-color: #4db6ac;
+    }
+
+    @media (max-width: 600px) {
+      .newsletter input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .newsletter button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chandragiri</h1>
+    <p>Mini Tibet of Odisha</p>
+  </header>
+
+  <div class="container">
+    <div class="section highlight-box">
+      <h2>Quick Highlights</h2>
+      <ul>
+        <li>Famous for Tibetan monasteries and serene landscapes</li>
+        <li>Padmasambhava Mahavihara – one of Eastern India’s biggest monasteries</li>
+        <li>Home to Tibetan refugee communities and authentic Tibetan cuisine</li>
+        <li>Close to Mahendragiri Hills for trekking and mythology lovers</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>About Chandragiri</h2>
+      <p>Chandragiri is located in the Gajapati district of Odisha and is known for its peaceful atmosphere, rich Tibetan culture, and beautiful natural surroundings. It’s an offbeat gem where visitors can enjoy a cultural and spiritual retreat surrounded by forested hills and traditional Tibetan settlements.</p>
+    </div>
+
+    <div class="section">
+      <h2>Things to Do</h2>
+      <ul>
+        <li>Visit the magnificent Padmasambhava Monastery</li>
+        <li>Try Tibetan food like momos, thukpa, and butter tea</li>
+        <li>Shop for Tibetan handicrafts and handmade carpets</li>
+        <li>Explore nearby Mahendragiri Hills for nature and mythology</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>How to Reach</h2>
+      <ul>
+        <li><strong>By Air:</strong> Nearest airport is Bhubaneswar (approx. 265 km)</li>
+        <li><strong>By Train:</strong> Nearest station is Brahmapur (approx. 80 km)</li>
+        <li><strong>By Road:</strong> Regular buses and taxis available from Brahmapur</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Best Time to Visit</h2>
+      <p>October to March is the ideal time when the weather is cool and cultural festivals are celebrated.</p>
+    </div>
+
+    <div class="section">
+      <h2>Travel Tips</h2>
+      <ul>
+        <li>Respect local traditions and monastery rules</li>
+        <li>Try local food but ensure it's from hygienic places</li>
+        <li>Carry warm clothes as it can get chilly, especially at night</li>
+      </ul>
+    </div>
+
+    <div class="section newsletter">
+      <h2>Subscribe for Travel Tips & Updates</h2>
+      <input type="email" placeholder="Enter your email">
+      <button>Subscribe</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Explore Odisha. All rights reserved.
+  </footer>
+</body>
+</html>
