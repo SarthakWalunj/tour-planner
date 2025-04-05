@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Odisha</title>
+  <style>
+    :root {
+      --bg-main: #fdf6f0;
+      --card-bg: #ffffff;
+      --accent: #9ec8b9;
+      --accent-dark: #7ab8a2;
+      --text-dark: #3e3e3e;
+      --highlight: #f9c9c2;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-main);
+      color: var(--text-dark);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      position: relative;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      background: url('odisha-banner.jpg') center/cover no-repeat;
+      animation: fadeInDown 1.2s ease-out;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(2px);
+      z-index: 1;
+    }
+
+    header h1,
+    header p {
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      animation: slideInLeft 1s ease-out;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      animation: slideInRight 1s ease-out;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .destinations {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      width: 250px;
+      text-align: center;
+      padding: 20px;
+      border: 2px solid var(--accent);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      border-color: var(--accent-dark);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      margin: 16px 0 10px;
+      font-size: 1.3rem;
+      color: var(--accent-dark);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    footer {
+      background-color: var(--accent);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      margin-top: 60px;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    footer h4 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    footer p {
+      margin: 4px 0;
+    }
+
+    .newsletter {
+      margin-top: 30px;
+    }
+
+    .newsletter input {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      margin-right: 10px;
+      width: 250px;
+      max-width: 80%;
+    }
+
+    .newsletter button {
+      padding: 10px 20px;
+      border-radius: 8px;
+      background-color: var(--highlight);
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes slideInLeft {
+      from {opacity: 0; transform: translateX(-60px);}
+      to {opacity: 1; transform: translateX(0);}
+    }
+    @keyframes slideInRight {
+      from {opacity: 0; transform: translateX(60px);}
+      to {opacity: 1; transform: translateX(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Explore Odisha's Hidden Gems</h1>
+    <p>Unveil majestic hills, scenic lakes, rich culture & thrilling adventures</p>
+  </header>
+
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom: 30px; animation: fadeIn 1.3s ease-in-out;">Top Places to Explore</h2>
+    <div class="destinations">
+      <div class="card"><a href="chandragiri.html" target="_blank">
+        <img src="1.jpg" alt="Chandragiri">
+        <h3>Chandragiri</h3>
+      </a></div>
+      <div class="card"><a href="satkosia.html" target="_blank">
+        <img src="2.jpg" alt="Satkosia Gorge">
+        <h3>Satkosia Gorge</h3>
+      </a></div>
+      <div class="card"><a href="daringbadi.html" target="_blank">
+        <img src="3.jpg" alt="Daringbadi">
+        <h3>Daringbadi</h3>
+      </a></div>
+      <div class="card"><a href="koraput.html" target="_blank">
+        <img src="4.jpg" alt="Koraput">
+        <h3>Koraput</h3>
+      </a></div>
+      <div class="card"><a href="tikarpada.html" target="_blank">
+        <img src="5.jpg" alt="Tikarpada">
+        <h3>Tikarpada</h3>
+      </a></div>
+    </div>
+  </div>
+
+  <footer>
+    <h4>Contact Us</h4>
+    <p>Email: Niru@exploreodisha.in</p>
+    <p>Phone: +91-8002242628</p>
+    <p>Follow us on Instagram: @explore_odisha</p>
+
+    <div class="newsletter">
+      <p><strong>Subscribe for updates:</strong></p>
+      <input type="email" placeholder="Enter your email">
+      <button>Subscribe</button>
+    </div>
+
+    <p style="margin-top: 20px;">&copy; 2025 Explore Odisha. All rights reserved.</p>
+  </footer>
+</body>
+</html>
